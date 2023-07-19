@@ -12,6 +12,20 @@
     {% jsonLdScript meta, type %}
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-logo">
+          {{ meta.site.name }}
+        </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/test">Home</a></li>
+            <li><a href="/test">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     {{ content | safe }}
     <script src="/js/main.js?{{ timestamp }}" defer></script>
   </body>
