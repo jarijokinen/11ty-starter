@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "11ty-starter",
+  "version": "0.0.1",
+  "description": "Starter site for Eleventy (11ty).",
+  "scripts": {
+    "build": "npm-run-all --parallel build:*",
+    "build:eleventy": "npx @11ty/eleventy",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:eleventy": "eleventy --serve"
+  },
+  "author": "Jari Jokinen <jari.jokinen@j2.fi>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
