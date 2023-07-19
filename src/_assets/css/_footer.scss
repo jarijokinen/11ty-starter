@@ -1,0 +1,19 @@
+.footer {
+  font-size: 1.4rem;
+  padding: 30px 0;
+}
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links ul {
+  display: flex;
+  gap: 30px;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+}
