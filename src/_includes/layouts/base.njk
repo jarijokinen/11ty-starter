@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ meta.site.lang }}">
   <head>
     <meta charshet="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }} | {{ site.name }}</title>
+    <title>{{ title }} | {{ meta.site.name }}</title>
     <link rel="stylesheet" href="/css/main.css?{{ timestamp }}">
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="canonical" href="{{ meta.site.url }}{{ page.url }}">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+html">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    {% jsonLdScript meta, type %}
   </head>
   <body>
     {{ content | safe }}

@@ -1,0 +1,11 @@
+{
+  "site": {
+    "description": "Lorem ipsum dolor sit amet",
+    "lang": "en",
+    "name": "Example Site",
+    "url": "https://example.com"
+  },
+  "image": {
+    "src": ""
+  }
+}
