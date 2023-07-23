@@ -9,6 +9,9 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+html">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    {% if description %}
+      <meta name="description" content="{{ description }}">
+    {% endif %}
     {% jsonLdScript meta, type %}
   </head>
   <body>
