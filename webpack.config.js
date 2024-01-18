@@ -1,8 +1,8 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+import path from 'path';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
-module.exports = {
+const config = {
   mode: 'production',
   entry: {
     main: { import: './src/_assets/js/main.js', filename: 'js/main.js' }
@@ -31,7 +31,7 @@ module.exports = {
     minimizer: [new TerserPlugin()]
   },
   output: {
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve('dist')
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -39,3 +39,5 @@ module.exports = {
     })
   ]
 };
+
+export default config;
