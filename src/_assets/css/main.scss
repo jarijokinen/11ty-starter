@@ -1,7 +1,7 @@
-@import 'base';
-@import 'svg';
+@use 'base';
+@use 'svg';
 
-@import 'container';
-@import 'footer';
-@import 'header';
-@import 'page';
+@use 'container';
+@use 'footer';
+@use 'header';
+@use 'page';

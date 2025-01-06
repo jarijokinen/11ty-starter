@@ -1,3 +1,5 @@
+@use "svg";
+
 .header {
   height: 80px;
   user-select: none;
@@ -30,7 +32,7 @@
   text-decoration: none;
 }
 .header-nav-toggle {
-  background: $svg-nav-open;
+  background: svg.$nav-open;
   height: 30px;
   position: relative;
   width: 30px;
@@ -42,7 +44,7 @@
 @media (max-width: 767px) {
   .header-nav-on {
     .header-nav-toggle {
-      background: $svg-nav-close;
+      background: svg.$nav-close;
     }
     ul {
       align-items: center;
